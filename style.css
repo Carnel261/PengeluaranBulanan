@@ -1,0 +1,106 @@
+/* Import Google Font (Poppins) */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Latar Belakang Gambar */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Ganti URL gambar ini jika Anda mau */
+    background-image: url('https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1YWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.6) grayscale(0.2);
+    z-index: -1;
+}
+
+/* Penyesuaian Aplikasi Utama */
+.app-container {
+    max-width: 1200px; 
+    width: 100%;
+    z-index: 1;
+}
+
+/* WIDGET RINGKASAN */
+.summary-widget .card-body {
+    padding: 1.25rem;
+}
+.summary-widget .card-title {
+    font-size: 0.85rem;
+    font-weight: 500;
+    opacity: 0.9;
+}
+.summary-widget .h2, .summary-widget .h4 {
+    margin-bottom: 0;
+}
+
+/* Kartu utama */
+.card {
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(8px);
+    border: none;
+    height: 100%; /* Agar kartu di 2 kolom sama tinggi */
+}
+
+/* Penyesuaian kecil pada input, dll */
+.card-header.bg-primary {
+    background-image: linear-gradient(to right, #007bff, #0056b3);
+}
+.custom-input-group .form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+    border-color: #80bdff;
+}
+#statusBulan.alert-info {
+    background-color: #e0f7fa; border-color: #b2ebf2; color: #00838f;
+}
+#statusBulan.alert-warning {
+    background-color: #fff3e0; border-color: #ffe0b2; color: #e65100;
+}
+
+/* Daftar Pengeluaran */
+#daftarPengeluaran .list-group-item {
+    padding: 1rem 1.25rem;
+    border-left: 5px solid #007bff;
+    margin-bottom: 8px;
+    border-radius: .5rem;
+    background-color: #f8f9fa;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+#daftarPengeluaran .list-group-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+#daftarPengeluaran .list-group-item span:first-child {
+    font-weight: 500;
+}
+#daftarPengeluaran .list-group-item .harga-item {
+    font-weight: 600; color: #28a745;
+}
+.tombol-hapus {
+    font-size: 0.75rem; padding: 0.3rem 0.6rem;
+}
+
+/* DAFTAR REKOMENDASI */
+#rekomendasiTeks .alert {
+    font-weight: 500;
+}
+
+/* Mode Disabled */
+#inputArea.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+    filter: grayscale(80%);
+}
